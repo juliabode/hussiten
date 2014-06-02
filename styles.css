@@ -1,0 +1,258 @@
+/*
+Theme Name:         Roots
+Theme URI:          http://roots.io/
+Description:        Roots is a WordPress starter theme based on HTML5 Boilerplate & Bootstrap. <a href="https://github.com/roots/roots/contributors">Contribute on GitHub</a>
+Version:            6.5.2
+Author:             Ben Word
+Author URI:         http://benword.com/
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+@font-face {
+    font-family: 'BD-Renaissance';
+        src:  url('assets/fonts/BD-Renaissance.ttf.woff') format('woff'),
+        url('assets/fonts/BD-Renaissance.ttf.svg#BD-Renaissance') format('svg'),
+        url('assets/fonts/BD-Renaissance.ttf.eot'),
+        url('assets/fonts/BD-Renaissance.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+body {
+    background: url(assets/img/bg.jpg);
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Vollkorn';
+}
+
+.page-header {
+    display: none;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+a {
+    color: #444442;
+}
+
+a:hover {
+    color: #333333;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    background: #D0CABA;
+    border-radius: 0;
+    color: #333333;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.font-special,
+.aesop-content-component p:first-child:first-letter {
+    font-family: 'BD-Renaissance';
+    font-size: 102px;
+    line-height: 102px;
+    float: left;
+    padding-right: 12px;
+}
+
+.aesop-cover-title {
+    font-family: 'BD-Renaissance';
+    color: #fff;
+    width: 90%;
+    left: 10%;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 12px;
+    bottom: 140px;
+    background: rgba(0,0,0,0.8);
+    font-size: 62px;
+}
+
+.aesop-article-chapter-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.aesop-component {
+    margin: 0 auto;
+}
+
+.aesop-content-component {
+    background: url(assets/img/bg.jpg) !important;
+    padding: 60px 0;
+    box-shadow: 0 0 8px -2px rgba(0,0,0,.8);
+}
+
+footer {
+    background: inherit;
+}
+
+.left-off-canvas-toggle {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 39px;
+    background-color: #D0CABA;
+    left: 0;
+    top: 52px;
+    text-align: center;
+    font-size: 21px;
+    cursor: pointer;
+    color: #FFF;
+    border-left: 10px solid #D0CABA;
+    border-radius: 0 3px 3px 0;
+    z-index: 1002;
+}
+
+.fa-bars {
+    line-height: 39px;
+    color: #444442;
+}
+
+/* Off Canvas Menu */
+.off-canvas-wrap {
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-off-canvas-menu, .left-off-canvas-toggle {
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -ms-transition: -ms-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+}
+.inner-wrap:before, .inner-wrap:after {
+  content: " ";
+  display: table;
+}
+.inner-wrap:after {
+  clear: both;
+}
+
+.left-off-canvas-menu {
+    -webkit-backface-visibility: hidden;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    background: #E4DDCE url(assets/img/knight.jpg) center bottom no-repeat;
+    border-right: 10px solid #D0CABA;
+    z-index: 1001;
+    box-sizing: content-box;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+.left-off-canvas-menu * {
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+
+ul.off-canvas-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.off-canvas-list > li a {
+    padding: 0.3rem 0.9375rem;
+    color: #999999;
+    text-transform: uppercase;
+    background: #444444;
+    border-top: 1px solid #5e5e5e;
+    border-bottom: none;
+    margin: 0;
+}
+ul.off-canvas-list li a {
+    display: block;
+    padding: 0.66667rem;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #262626;
+}
+ul.off-canvas-list li a:hover {
+    text-decoration: none;
+}
+
+ul.dropdown-menu li a {
+    background-color: transparent;
+}
+
+.move-right .left-off-canvas-menu, .move-right .left-off-canvas-toggle {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.move-right .left-off-canvas-menu {
+    box-shadow: 0px 0px 15px rgba(0,0,0,10.75);
+}
+
+.move-right .left-off-canvas-toggle {
+    -webkit-transform: translate3d(250px, 0, 0);
+    -moz-transform: translate3d(250px, 0, 0);
+    -ms-transform: translate3d(250px, 0, 0);
+    -o-transform: translate3d(250px, 0, 0);
+    transform: translate3d(250px, 0, 0);
+}
+
+.move-right a.exit-off-canvas {
+    -webkit-backface-visibility: hidden;
+    transition: background 300ms ease;
+    cursor: pointer;
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1002;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.inner-off-canvas {
+    border-bottom: 1px solid #E9E3D4;
+}
+
+.inner-off-canvas li {
+    border-top: 1px solid #E9E3D4;
+    border-bottom: 1px solid #D0CABA;
+}
+
+a.brand {
+    border-bottom: 1px solid #D0CABA;
+    padding: 15px;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    line-height: 26px;
+}
+
+.content-info .container {
+    max-width: 800px;
+}
