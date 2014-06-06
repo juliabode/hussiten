@@ -256,3 +256,23 @@ a.brand {
 .content-info .container {
     max-width: 800px;
 }
+
+@media all and (max-width: 800px) {
+
+    .left-off-canvas-toggle {
+        top: 0;
+        width: 100%;
+        text-align: left;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding-left: 10px;
+    }
+
+    .move-right .left-off-canvas-toggle {
+        box-shadow: 10px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .aesop-content-component, .content-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
